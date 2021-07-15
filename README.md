@@ -1,16 +1,17 @@
-## run pm2 on windows startup
+## run pm2 as a Windows Service
 
-$ npm install pm2 -g
+https://www.npmjs.com/package/node-windows
 
-$ npm install pm2-windows-startup -g
+Pre-requisites:
 
-$ pm2-startup install
+$ npm install -g node-windows
 
-$ pm2 start index.js --name NodeServices
+$ npm link node-windows
 
-$ pm2 save
+To install:
 
+$ npm run install-service
 
-reboot
+To uninstall:
 
-$ pm2 ls
+$ npm run uninstall-service

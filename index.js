@@ -3,6 +3,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.json("NodeServices is running");
+});
+
 app.post("/api/nodeservices", (req, res) => {
 
     let script = req.body.script;
